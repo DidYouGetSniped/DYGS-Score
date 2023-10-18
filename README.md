@@ -21,8 +21,6 @@ Features
 
 *   Calculate your up-to-date DYGS Score
 *   See a detailed breakdown of the scoring algorithm
-*   Animations and effects for an engaging experience
-*   Mobile and desktop friendly interface
 
 Getting Started
 ---------------
@@ -39,7 +37,7 @@ The latest stats can be found in your player profile in the game.
 
 ### Usage
 
-1.  Download and run [DYGS Score.py](DYGS_Score.py)
+1.  Download and run [DYGS Score](https://github.com/DidYouGetSniped/DYGS-Score/releases)
 2.  Enter your stats when prompted
 3.  Your DYGS Score will be calculated and displayed!
 
