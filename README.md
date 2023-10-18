@@ -51,7 +51,7 @@ Pull requests and feature ideas are welcome! Feel free to open an issue for any 
 License
 -------
 
-This project is open source under the MIT license.
+This project is open source under the [MIT license](https://opensource.org/license/mit/).
 
 Disclaimer
 ----------
