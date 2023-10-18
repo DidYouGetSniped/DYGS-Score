@@ -1,47 +1,40 @@
 import math
 import random
 import time
+import webbrowser
+
+# Define reference scores
+reference_scores = {
+    "Did You Get Sniped?": 775,
+    "SAUNA MAKKARA": 1984,
+    "Walrus": 1311
+}
 
 # Display program information
-print("DYGS Score Python Program v0.1")
+print("DYGS Score Python Program v0.5")
 
 # Main program loop
 while True:
     # Display program creator's name
-    print("Created By: Did You Get Sniped?")
+    print("Created By: Did You Get Sniped")
     print("This DYGS Score calculator for War Brokers is not an official program or calculation and is made only for fun.\n")
 
     # Get user input for the selected option
     print("Select an option:")
     print("1. Calculate DYGS Score")
     print("2. Explain the Process")
+    print("3. View Reference Scores")
+    print("4. Visit DYGS Score GitHub Releases")
 
-    option = input("Enter the option number (1 or 2): ")
+
+    option = input("Enter the option number (1, 2, 3, or 4): ")
 
     if option == "1":
-        # Display the loading screen before the calculation
-        print("Loading Calculator...")
-
-        # Create a loading bar with 50 steps
-        for i in range(50):
-            time.sleep(0.08)  # Pause for 4 seconds divided into 50 steps
-            print("\r[" + "=" * i + " " * (50 - i) + "]", end='', flush=True)
 
         # Get user input for Level, K/D ratio, and ELO
         level = float(input("\nEnter the player's Level: "))
         kd_ratio = float(input("Enter the player's Kills/Death ratio: "))
         elo = float(input("Enter the player's ELO: "))
-
-        # Generate a random number of seconds to wait between 2 and 10 seconds
-        wait_time = round(random.uniform(2, 10))
-
-        # Display the calculated wait time
-        print(f"Calculating... Please wait about {wait_time} seconds")
-
-        # Create a progress bar
-        for i in range(50):
-            time.sleep(wait_time / 50)
-            print("\r[" + "=" * i + " " * (50 - i) + "]", end='', flush=True)
 
         # Calculate the DYGS Score
         dygs_score = (0.45 * level) + (0.35 * kd_ratio) * 100 + (0.20 * elo)
@@ -49,8 +42,9 @@ while True:
         # Round the DYGS Score to one decimal point
         dygs_score = round(dygs_score, 1)
 
-        # Display the calculated DYGS Score with one decimal point
-        print(f"\nThe DYGS Score is: {dygs_score:.1f}")
+        # Display the DYGS Score with one decimal point
+        print(f"\nThe DYGS Score is: {dygs_score:.1f} \n(can be biased towards people who have played longer, but it's better than inflated elo)")
+
 
     elif option == "2":
         # Explain the process of getting the score
@@ -74,8 +68,30 @@ while True:
         print("4. Finally, we add the results of the three steps to get the DYGS Score.")
         print("   The final DYGS Score is a comprehensive assessment of a player's performance, experience, and competitive abilities in War Brokers.")
 
+    elif option == "3":
+        # Display reference scores
+        print("\nReference Scores:")
+        for player, score in reference_scores.items():
+            print(f"{player}'s Score is: {score}")
+        print("(can be biased towards people who have played longer, but it's better than inflated elo)")
+        
+    elif option == "4":
+        # Open the GitHub releases page with a countdown
+        print("You are about to be redirected to the DYGS Score GitHub Releases page.")
+        print("Please wait for a 3-second countdown.")
+
+        for i in range(3, 0, -1):
+            print(f"Redirecting in {i} seconds...")
+            time.sleep(1)
+
+        # The URL to the GitHub releases page
+        github_url = "https://github.com/DidYouGetSniped/DYGS-Score/releases"
+
+        # Open the URL in the default web browser
+        webbrowser.open(github_url)
+
     else:
-        print("Invalid option. Please select either 1 or 2.")
+        print("Invalid option. Please select 1, 2, 3, or 4.")
 
     # Ask the user if they want to exit or restart
     restart_option = input("\nPress 1 to exit or 2 to restart the program: ")
@@ -85,3 +101,9 @@ while True:
     elif restart_option != "2":
         print("Invalid option. Exiting the program.")
         break  # Exit the program
+
+    # Generate a random number of seconds to wait between 2 and 10 seconds wait_time = round(random.uniform(2, 7)) 
+    # Display the calculated wait time print(f"Calculating... Please wait about {wait_time} seconds") 
+    # Create a progress bar for i in range(50): time.sleep(wait_time / 50)print("\r[" + "=" * i + " " * (50 - i) + "]", end='', flush=True)
+
+    
