@@ -21,6 +21,7 @@ Features
 
 *   Calculate your up-to-date DYGS Score
 *   See a detailed breakdown of the scoring algorithm
+*   View reference scores for comparison
 
 Getting Started
 ---------------
