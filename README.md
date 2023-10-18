@@ -12,7 +12,7 @@ The **DYGS Score** is a proprietary metric developed by [DidYouGetSniped](https:
 
 *   **Level** - Rewards player progression and time invested in the game. Higher levels have a greater impact on your score.
 *   **K/D Ratio** - Measures your kill-death proficiency. Higher K/D means better performance.
-*   **ELO** - Represents your competitive ranking ability. Higher ELO improves your score.
+*   **Kills and Games ELO** - Represents your competitive ranking ability. Higher ELO improves your score.
 
 Your DYGS Score is calculated by a weighted formula using these three stats. The end result is a comprehensive skill score tailored for War Brokers.
 
@@ -32,7 +32,7 @@ You need to know your War Brokers in-game stats:
 
 *   Level
 *   K/D Ratio
-*   ELO
+*   Kills and Games ELO
 
 The latest stats can be found in your player profile in the game.
 
