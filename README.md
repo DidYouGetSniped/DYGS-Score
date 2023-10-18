@@ -1,7 +1,7 @@
 DYGS Score Calculator
 =====================
 
-![](MY SKIN (transparent).png)
+<img src="dygs skin.png"/>
 
 Welcome to the DYGS Score calculator for War Brokers! This program allows you to calculate a custom player score based on your in-game stats. Without ELO Inflation!
 
