@@ -39,7 +39,7 @@ The latest stats can be found in your player profile in the game.
 
 ### Usage
 
-1.  Download and run [dygs\_score.py](dygs_score.py)
+1.  Download and run [dygs\_score.py](DYGS_Score.py)
 2.  Enter your stats when prompted
 3.  Your DYGS Score will be calculated and displayed!
 
@@ -53,7 +53,7 @@ Pull requests and feature ideas are welcome! Feel free to open an issue for any 
 License
 -------
 
-This project is open source under the [MIT license](LICENSE.md).
+This project is open source under the MIT license.
 
 Disclaimer
 ----------
